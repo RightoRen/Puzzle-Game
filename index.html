@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 	<title>Drag and Drop Puzzle Game</title>
 	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<button id="resetBut">Reset</button>
@@ -13,15 +13,16 @@
 		<h1>drag and drop!</h1>
 		<p>solve the puzzle</p>
 	</header>
+
 	<section id="game-boards">
-		<!-- these are the draggable pieces  -->
+		<!-- these are the draggable pieces -->
 		<div class="puzzle-pieces">
-			<img src="./images/topLeft0.jpg" class="puzzle-image" alt="top left">
-			<img src="./images/topRight0.jpg" class="puzzle-image" alt="top right">
-			<img src="./images/bottomLeft0.jpg" class="puzzle-image" alt="bottom left">
-			<img src="./images/bottomRight0.jpg" class="puzzle-image" alt="bottom right">
-		</div>
-		<!-- these are the dropzones -->
+			<img src="images/topLeft0.jpg" class="puzzle-image" alt="top left">
+			<img src="images/topRight0.jpg" class="puzzle-image" alt="top right">
+			<img src="images/bottomLeft0.jpg" class="puzzle-image" alt="bottom left">
+			<img src="images/bottomRight0.jpg" class="puzzle-image" alt="bottom right">
+		</div>	
+		<!-- these are the drop zones -->
 		<div class="puzzle-board">
 			<div class="drop-zone tl"></div>
 			<div class="drop-zone tr"></div>
@@ -29,15 +30,16 @@
 			<div class="drop-zone br"></div>
 		</div>
 	</section>
-
+	
 	<footer>
-		<p>click the thumbnail to change the pieces</p>
+		<p>Click Thumb to change pieces</p>
 		<nav id="buttonHolder">
-			<img data-bgref="0" src="./images/buttonZero.jpg" alt="puzzle background,forest">
-			<img idata-bgref="1" src="./images/buttonOne.jpg" alt="puzzle background,mountain">
-			<img data-bgref="2" src="./images/buttonTwo.jpg" alt="puzzle background,space">
-			<img idata-bgref="3" src="./images/buttonThree.jpg" alt="puzzle background,robots">
+			<img id="0" src="images/buttonZero.jpg" alt="puzzle background forest">
+			<img id="1" src="images/buttonOne.jpg" alt="puzzle background winter">
+			<img id="2" src="images/buttonTwo.jpg" alt="puzzle background space">
+			<img id="3" src="images/buttonThree.jpg" alt="puzzle background robots">
 		</nav>
+		
 	</footer>
 
 	<script src="js/main.js"></script>
